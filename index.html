@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Sheet Website</title>
+</head>
+<body>
+    <h1>ข้อมูลจาก Google Sheet</h1>
+    <table border="1">
+        <? for (var i = 1; i < data.length; i++) { ?>
+            <tr>
+                <? for (var j = 0; j < data[i].length; j++) { ?>
+                    <td><?= data[i][j] ?></td>
+                <? } ?>
+            </tr>
+        <? } ?>
+    </table>
+</body>
+</html>
